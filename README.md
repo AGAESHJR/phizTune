@@ -14,4 +14,3 @@ Our project, phizTune, aims to revolutionize the music streaming experience
  behavior. phizTune strives to deliver a more personalized and enjoyable
  musical experience, contributing to an overall higher quality of life
 
-![Uploading image.png…]()
