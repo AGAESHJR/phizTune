@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s, border-radius 0.3s;
+  
+  }
+  
+  header:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    animation: bounceAnimation 0.8s ease-in-out;
+  }
+  
+  @keyframes bounceAnimation {
+    0% {
+       transform: translateY(-10px);
+    }
+    50% {
+       transform: translateY(5px);
+    }
+    80% {
+       transform: translateY(0);
+    }
+  }
+  
+  .btnlogin {
+    margin-top: 10px;
+  }
+  
+  .signup-button {
+    height: 50px;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 300px;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .signup-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .signup-button:hover a {
+    color: white;
+  }
+  
+  .title {
+    font-size: 30px;
+    user-select: none;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navigation a::after{
+    content:'' ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    color: #78ffd6;
+    transition: transform .5s;
+  }
+  
+  .navigation a:hover::after{
+    color: #78ffd6;
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  .spanny{
+    color: #78ffd6;
+  }
+  
+  @media only screen and (min-width: 884px) {
+    .title {
+      font-size: 24px;
+    }  
+  
+    .navigation a {
+      font-size: 0.9em;
+      margin-left: 30px;
+    }
+  }
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    background:whitesmoke;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+
+.video_cont {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  #video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-top: 50px;
+  }
+#emotions-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  background-color: gray;
+  padding: 10px;
+}
+
+.emotion {
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.emotion.highlight {
+  background-color: yellow;
+}
+
+#final-emotion {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+
+#restart-button {
+    margin-top: -35px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+   
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.content2
+{
+    background-color: black;
+    width: 100%;
+    margin-top: 20px;
+   
+   
+}
